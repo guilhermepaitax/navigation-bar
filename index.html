@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navigation Bar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+  <nav>
+    <div class="nav-body">
+      <div class="nav-header">
+        <div class="nav-brand">
+          <div class="nav-brand-logo">
+            <img src="img/logo.svg" alt="Logo">
+          </div>
+
+          <button class="btn-close-nav">
+            <i data-feather="arrow-left"></i>
+          </button>
+        </div>
+        <div class="nav-search">
+          <i data-feather="search"></i>
+          <input placeholder="Search something..." type="text">
+        </div>
+      </div>
+
+      <div class="nav-content">
+        <div class="nav-item">
+          <a href="#" class="nav-link active">
+            <div>
+              <i data-feather="layout"></i>
+              Dashboard
+            </div>
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="#" class="nav-link">
+            <div>
+              <i data-feather="folder"></i>
+              <span>Folder</span>
+            </div>
+            <i data-feather="chevron-down"></i>
+          </a>
+          <ul class="nav-sub-links">
+            <li>
+              <a class="nav-link" href="">
+                Courses
+              </a>
+            </li>
+            <li>
+              <a class="nav-link" href="">
+                Categories
+              </a>
+            </li>
+            <li>
+              <a class="nav-link" href="">
+                Video Library
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-item">
+          <a href="#" class="nav-link">
+            <div>
+              <i data-feather="calendar"></i>
+              Calendar
+            </div>
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="#" class="nav-link">
+            <div>
+              <i data-feather="briefcase"></i>
+              Work
+            </div>
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="#" class="nav-link">
+            <div>
+              <i data-feather="bar-chart"></i>
+              Report
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="nav-footer">
+      <div class="user-avatar">
+        <img src="https://i.pravatar.cc/150?img=22" alt="Avatar">
+        <b title="online" class="user-online"></b>
+      </div>
+      <div class="user-info">
+        <strong>Jane Doenson</strong>
+        <span>janedoenson@gmail.com</span>
+      </div>
+    </div>
+  </nav>
+
+  <script>
+    feather.replace()
+  </script>
+</body>
+</html>
